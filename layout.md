@@ -1,1 +1,2 @@
 Langmuir.tex
+figures/langmuir_fig_lin/langmuir_fig_lin.png
