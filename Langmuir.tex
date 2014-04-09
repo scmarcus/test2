@@ -1,3 +1,18 @@
+\documentclass[12pt]{amsart}
+\usepackage[utf8]{inputenc} 
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+\begin{document}
 Die Langmuir-Isotherme ist das einfachste Sorptionsmodell, das physikalische Grundlagen besitzt. 
 Es geht von folgenden Annahmen aus:
 
@@ -12,6 +27,7 @@ Die Langmuir-Isotherme kann eine maximale Beladung der Sorptionsoberflaechen abb
 
 \begin{equation}
 q=q_{max}*\frac{K*[Si]}{1+K*[Si]}
+\label{eqn:langmuir}
 \end{equation}
 
 \begin{description}
@@ -51,3 +67,4 @@ Aus der linearen Darstellung kann man aus der Steigung  eine maximale Beladung $
 Dies ist hier $\sim$ 300$\mu$g Si pro Gramm Gibbsit ($1.2*10^{-5}$ mol Si pro Gramm Gibbsit)
 Die maximal adsorbierte Menge in dieser Versuchsreihe waren  $\sim$ 230$\mu$g Si pro Gramm Gibbsite bei initial 40 ppm Si.
 
+\end{document}  
